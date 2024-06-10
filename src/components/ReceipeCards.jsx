@@ -8,8 +8,6 @@ const getTwoValuesFromArray = (arr) => {
 };
 
 const RecipeCard = ({ recipe, bg, badge }) => {
-  console.log("recepie", recipe.recipe?.image);
-
   const healthLabels = getTwoValuesFromArray(recipe?.healthLabels);
   const [isFavorite, setIsFavorite] = useState(
     localStorage.getItem("favorites")?.includes(recipe.label)
